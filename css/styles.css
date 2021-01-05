@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+}
+
+header .navbar {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 10vh;
+}
+
+.logo {
+  font-weight: lighter;
+}
+
+.nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-items li {
+  margin-right: 60px;
+}
+
+.nav-items li a {
+  color: #000;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+
+section {
+  width: 100%;
+}
+
+.content {
+  position: relative;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .textBox {
+  max-width: 700px;
+}
+
+.content .textBox h1 {
+  font-size: 4.1em;
+  letter-spacing: 1px;
+}
+
+.content .textBox p {
+  font-size: 2.3em;
+  margin-bottom: 30px;
+}
+
+.content .textBox .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .textBox .icons li {
+  margin-right: 20px;
+}
+
+.content .imgBox {
+  z-index: 2;
+}
+
+.content .circle {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  z-index: 1;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: #faffcf;
+}
+
+.projects {
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .projectBox {
+  margin: 10px;
+  width: 400px;
+}
+
+.projects .projectBox .projectImg {
+  width: 100%;
+  height: 200px;
+  background: #c0c0c0;
+  margin-bottom: 20px;
+}
+
+.projects .projectBox p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.projects .projectBox .project-icons {
+  margin-bottom: 20px;
+}
+
+.project-icons img {
+  margin-right: 20px;
+  width: 40px;
+}
+
+.project-btn a {
+  padding: 10px 37px;
+  background: gray;
+  color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */
