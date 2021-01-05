@@ -50,13 +50,25 @@ header .navbar {
 }
 
 .nav-items li {
-  margin-right: 60px;
+  margin-left: 60px;
 }
 
 .nav-items li a {
   color: #000;
   font-size: 1.1em;
   letter-spacing: 1px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 35px;
+  height: 3px;
+  background: #000;
+  margin-bottom: 3px;
 }
 
 section {
@@ -77,17 +89,21 @@ section {
 }
 
 .content .textBox {
-  max-width: 700px;
+  max-width: 600px;
+  margin-left: 100px;
 }
 
 .content .textBox h1 {
   font-size: 4.1em;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  margin-bottom: 20px;
 }
 
 .content .textBox p {
   font-size: 2.3em;
   margin-bottom: 30px;
+  letter-spacing: 1px;
 }
 
 .content .textBox .icons {
@@ -97,7 +113,15 @@ section {
 }
 
 .content .textBox .icons li {
-  margin-right: 20px;
+  margin-right: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.content .textBox .icons li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .content .imgBox {
@@ -115,21 +139,40 @@ section {
   background: #faffcf;
 }
 
+#projects {
+  position: relative;
+  width: 100%;
+}
+
+.head-projects {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.head-projects h2 {
+  font-size: 3em;
+  font-weight: lighter;
+}
+
 .projects {
-  min-height: 80vh;
+  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .projects .projectBox {
-  margin: 10px;
+  padding: 10px;
+  margin: 20px;
   width: 400px;
+  background: #ececec;
 }
 
 .projects .projectBox .projectImg {
@@ -145,17 +188,149 @@ section {
 }
 
 .projects .projectBox .project-icons {
-  margin-bottom: 20px;
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.project-icons img {
-  margin-right: 20px;
+.projects .projectBox .project-icons img {
   width: 40px;
 }
 
-.project-btn a {
-  padding: 10px 37px;
-  background: gray;
-  color: #fff;
+.projects .arrow-left {
+  margin-right: 50px;
+  color: #616161;
+}
+
+.projects .arrow-right {
+  margin-left: 50px;
+  color: #616161;
+}
+
+.project-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project-btn button {
+  width: 49%;
+  padding: 12px 8px;
+  border: none;
+}
+
+.project-btn button a {
+  color: #000;
+}
+
+.contact-content {
+  position: relative;
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact-text {
+  text-align: center;
+}
+
+.contact .contact-text p {
+  margin-bottom: 20px;
+  font-size: 1.3em;
+}
+
+.circle-contact {
+  width: 150px;
+  height: 150px;
+  background: #ff7676;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 867px) {
+  .burger {
+    display: block;
+    z-index: 9;
+  }
+  .nav-items {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background: #cacaca;
+    opacity: 0.9;
+    z-index: 8;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.9s ease-in;
+    transition: all 0.9s ease-in;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  .nav-items li {
+    margin-left: 0rem;
+    margin-bottom: 20px;
+  }
+  .nav-items li a {
+    font-size: 1.5em;
+  }
+  .nav-open {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .content .imgBox img {
+    width: 380px;
+  }
+  .content .textBox {
+    z-index: 4;
+  }
+  .content .textBox h1 {
+    font-size: 3.5em;
+  }
+  .content .textBox p {
+    font-size: 1.7em;
+  }
+  .projectBox {
+    width: 300px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
