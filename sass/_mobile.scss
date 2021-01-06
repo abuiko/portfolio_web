@@ -28,20 +28,6 @@
   .nav-open {
     transform: translateX(0%);
   }
-
-  .content .imgBox img {
-    width: 380px;
-  }
-  .content .textBox {
-    z-index: 4;
-    h1 {
-      font-size: 3.5em;
-    }
-    p {
-      font-size: 1.7em;
-    }
-  }
-  .projectBox {
-    width: 300px;
-  }
+}
+@media screen and (max-width: 390px) {
 }
