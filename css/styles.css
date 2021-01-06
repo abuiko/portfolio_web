@@ -59,6 +59,7 @@ header .navbar {
   font-weight: lighter;
   font-size: 2em;
   letter-spacing: 1px;
+  color: #fff;
 }
 
 .nav-items {
@@ -75,7 +76,7 @@ header .navbar {
 }
 
 .nav-items li a {
-  color: #000;
+  color: #fff;
   font-size: 1em;
   font-family: "Montserrat", sans-serif;
 }
@@ -88,7 +89,7 @@ header .navbar {
 .burger .line {
   width: 35px;
   height: 3px;
-  background: #000;
+  background: #fff;
   margin-bottom: 3px;
 }
 
@@ -112,13 +113,13 @@ header .navbar {
 }
 
 .content .textBox {
-  max-width: 600px;
   margin-left: 0px;
 }
 
 .content .textBox h1 {
   font-size: 3.7em;
   letter-spacing: 2px;
+  color: #fff;
   margin-bottom: 20px;
 }
 
@@ -127,6 +128,7 @@ header .navbar {
   margin-bottom: 30px;
   letter-spacing: 1px;
   width: 80%;
+  color: #fff;
 }
 
 .content .textBox .icons {
@@ -140,6 +142,7 @@ header .navbar {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
+  color: #fff;
 }
 
 .content .textBox .icons li:hover {
@@ -152,7 +155,7 @@ header .navbar {
 }
 
 .content .imgBox img {
-  width: 450px;
+  width: 550px;
 }
 
 /*---------------X----------------------Home content---------------X-----------------*/
