@@ -6,7 +6,17 @@
 }
 
 h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p,
+a {
+  font-family: "Poppins", sans-serif;
 }
 
 li {
@@ -67,6 +77,7 @@ header .navbar {
 .nav-items li a {
   color: #000;
   font-size: 1em;
+  font-family: "Montserrat", sans-serif;
 }
 
 .burger {
@@ -108,7 +119,6 @@ header .navbar {
 .content .textBox h1 {
   font-size: 3.7em;
   letter-spacing: 2px;
-  font-weight: lighter;
   margin-bottom: 20px;
 }
 
