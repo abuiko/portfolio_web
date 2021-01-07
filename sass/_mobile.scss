@@ -1,3 +1,8 @@
+@media screen and (max-width: 1120px) {
+  header {
+    max-width: 80%;
+  }
+}
 @media screen and (max-width: 867px) {
   .burger {
     display: block;
@@ -29,5 +34,58 @@
     transform: translateX(0%);
   }
 }
-@media screen and (max-width: 390px) {
+
+@media screen and (max-width: 450px) {
+  .content {
+    padding: 20px 0px;
+  }
+  .content .textBox h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  .content .textBox p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .content .imgBox {
+    margin: auto;
+  }
+  .content .imgBox img {
+    width: 250px;
+  }
+  .icons li {
+    margin-right: 10px;
+  }
+  .icons i {
+    font-size: 1.9em;
+  }
+  .project-box {
+    width: 330px;
+  }
+  #instruments .headline {
+    margin-bottom: 50px;
+    font-size: 2em;
+  }
+  .circle {
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+
+    img {
+      width: 60px;
+    }
+  }
+  #projects h2 {
+    font-size: 2em;
+  }
+  .contact .contact-text p {
+    font-size: 0.9em;
+  }
+  .footer-btn {
+    padding: 8px 23px;
+
+    margin-top: 10px;
+
+    font-size: 0.8em;
+  }
 }

@@ -38,7 +38,7 @@ a {
 }
 
 header {
-  width: 60%;
+  max-width: 1100px;
   margin: auto;
   padding: 20px 0;
 }
@@ -130,7 +130,7 @@ nav.navbar ul li a:hover:after {
 }
 
 #content {
-  width: 55%;
+  max-width: 1100px;
   margin: auto;
 }
 
@@ -145,6 +145,8 @@ nav.navbar ul li a:hover:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .content .textBox {
@@ -187,10 +189,11 @@ nav.navbar ul li a:hover:after {
 
 .content .imgBox {
   z-index: 2;
+  margin-left: 100px;
 }
 
 .content .imgBox img {
-  width: 550px;
+  width: 520px;
 }
 
 /*---------------X----------------------Home content---------------X-----------------*/
@@ -326,6 +329,7 @@ nav.navbar ul li a:hover:after {
 }
 
 .project-box {
+  position: relative;
   width: 550px;
   height: 350px;
   background: #f3f3f3;
@@ -346,6 +350,29 @@ nav.navbar ul li a:hover:after {
 .project-box p {
   font-size: 0.9em;
   margin: 1px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #747ab3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.9;
+}
+
+.overlay h2 {
+  color: #fff;
 }
 
 .project-img {
@@ -445,6 +472,12 @@ nav.navbar ul li a:hover:after {
   font-size: 1.3em;
 }
 
+@media screen and (max-width: 1120px) {
+  header {
+    max-width: 80%;
+  }
+}
+
 @media screen and (max-width: 867px) {
   .burger {
     display: block;
@@ -484,6 +517,58 @@ nav.navbar ul li a:hover:after {
   .nav-open {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .content {
+    padding: 20px 0px;
+  }
+  .content .textBox h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  .content .textBox p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .content .imgBox {
+    margin: auto;
+  }
+  .content .imgBox img {
+    width: 250px;
+  }
+  .icons li {
+    margin-right: 10px;
+  }
+  .icons i {
+    font-size: 1.9em;
+  }
+  .project-box {
+    width: 330px;
+  }
+  #instruments .headline {
+    margin-bottom: 50px;
+    font-size: 2em;
+  }
+  .circle {
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+  }
+  .circle img {
+    width: 60px;
+  }
+  #projects h2 {
+    font-size: 2em;
+  }
+  .contact .contact-text p {
+    font-size: 0.9em;
+  }
+  .footer-btn {
+    padding: 8px 23px;
+    margin-top: 10px;
+    font-size: 0.8em;
   }
 }
 /*# sourceMappingURL=styles.css.map */
