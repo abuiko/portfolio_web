@@ -8,10 +8,15 @@
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  font-size: 3.7em;
+  letter-spacing: 2px;
+  color: #fff;
 }
 
 h2 {
   font-family: "Montserrat", sans-serif;
+  font-size: 2.7em;
+  font-weight: lighter;
 }
 
 p,
@@ -32,7 +37,7 @@ a {
   width: 100%;
   background-image: url("/img/background.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   min-height: 100vh;
 }
@@ -40,11 +45,10 @@ a {
 header {
   max-width: 1100px;
   margin: auto;
-  padding: 20px 0;
+  padding: 20px 0px;
 }
 
 header .navbar {
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,7 +78,7 @@ header .navbar {
 }
 
 .nav-items li {
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 .nav-items li a {
@@ -134,8 +138,9 @@ nav.navbar ul li a:hover:after {
   margin: auto;
 }
 
-.content {
+.content-wrapper {
   position: relative;
+  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,20 +152,14 @@ nav.navbar ul li a:hover:after {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 20px;
 }
 
-.content .textBox {
-  margin-left: 0px;
-}
-
-.content .textBox h1 {
-  font-size: 3.7em;
-  letter-spacing: 2px;
-  color: #fff;
+.content-wrapper .textBox h1 {
   margin-bottom: 20px;
 }
 
-.content .textBox p {
+.content-wrapper .textBox p {
   font-size: 1.8em;
   margin-bottom: 30px;
   letter-spacing: 1px;
@@ -168,13 +167,13 @@ nav.navbar ul li a:hover:after {
   color: #fff;
 }
 
-.content .textBox .icons {
+.content-wrapper .textBox .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.content .textBox .icons li {
+.content-wrapper .textBox .icons li {
   margin-right: 40px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -182,17 +181,17 @@ nav.navbar ul li a:hover:after {
   color: #fff;
 }
 
-.content .textBox .icons li:hover {
+.content-wrapper .textBox .icons li:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.content .imgBox {
+.content-wrapper .imgBox {
   z-index: 2;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
-.content .imgBox img {
+.content-wrapper .imgBox img {
   width: 520px;
 }
 
@@ -218,8 +217,6 @@ nav.navbar ul li a:hover:after {
 
 #instruments h2 {
   margin-bottom: 100px;
-  font-size: 2.7em;
-  font-weight: lighter;
 }
 
 .headline:after {
@@ -293,9 +290,7 @@ nav.navbar ul li a:hover:after {
 }
 
 #projects h2 {
-  font-size: 2.7em;
   margin-bottom: 50px;
-  font-weight: lighter;
 }
 
 .pro-headline:after {
@@ -472,9 +467,25 @@ nav.navbar ul li a:hover:after {
   font-size: 1.3em;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1159px) {
   header {
-    max-width: 80%;
+    max-width: 900px;
+  }
+  .navbar {
+    width: 95%;
+    margin: auto;
+  }
+  .content-wrapper .textBox {
+    width: 380px;
+  }
+  .content-wrapper .textBox h1 {
+    font-size: 3.4em;
+  }
+  .content-wrapper .textBox p {
+    font-size: 1.5em;
+  }
+  .content-wrapper .imgBox img {
+    width: 380px;
   }
 }
 
@@ -521,21 +532,21 @@ nav.navbar ul li a:hover:after {
 }
 
 @media screen and (max-width: 450px) {
-  .content {
+  .content-wrapper {
     padding: 20px 0px;
   }
-  .content .textBox h1 {
+  .content-wrapper .textBox h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
   }
-  .content .textBox p {
+  .content-wrapper .textBox p {
     font-size: 1em;
     margin-bottom: 10px;
   }
-  .content .imgBox {
+  .content-wrapper .imgBox {
     margin: auto;
   }
-  .content .imgBox img {
+  .content-wrapper .imgBox img {
     width: 250px;
   }
   .icons li {

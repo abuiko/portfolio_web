@@ -1,8 +1,26 @@
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1159px) {
   header {
-    max-width: 80%;
+    max-width: 900px;
+  }
+  .navbar {
+    width: 95%;
+    margin: auto;
+  }
+
+  .content-wrapper .textBox {
+    width: 380px;
+    h1 {
+      font-size: 3.4em;
+    }
+    p {
+      font-size: 1.5em;
+    }
+  }
+  .content-wrapper .imgBox img {
+    width: 380px;
   }
 }
+
 @media screen and (max-width: 867px) {
   .burger {
     display: block;
@@ -36,21 +54,21 @@
 }
 
 @media screen and (max-width: 450px) {
-  .content {
+  .content-wrapper {
     padding: 20px 0px;
   }
-  .content .textBox h1 {
+  .content-wrapper .textBox h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
   }
-  .content .textBox p {
+  .content-wrapper .textBox p {
     font-size: 1em;
     margin-bottom: 10px;
   }
-  .content .imgBox {
+  .content-wrapper .imgBox {
     margin: auto;
   }
-  .content .imgBox img {
+  .content-wrapper .imgBox img {
     width: 250px;
   }
   .icons li {

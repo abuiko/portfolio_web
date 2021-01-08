@@ -4,7 +4,7 @@
   width: 100%;
   background-image: url("/img/background.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   min-height: 100vh;
 }
@@ -12,10 +12,9 @@
 header {
   max-width: 1100px;
   margin: auto;
-  padding: 20px 0;
+  padding: 20px 0px;
+
   .navbar {
-    // width: 90%;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,9 +30,8 @@ header {
 .nav-items {
   display: flex;
   align-items: center;
-
   li {
-    margin-left: 40px;
+    margin-left: 30px;
     a {
       color: #fff;
       font-size: 1em;
@@ -89,24 +87,19 @@ nav.navbar ul li a:hover:after {
   margin: auto;
 }
 
-.content {
+.content-wrapper {
   position: relative;
-  // margin: auto;
-  // min-height: 80vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 20px;
 
   .textBox {
-    // max-width: 600px;
-    margin-left: 0px;
+    // margin-left: 0px;
 
     h1 {
-      font-size: 3.7em;
-      letter-spacing: 2px;
-      color: #fff;
-
       margin-bottom: 20px;
     }
     p {
@@ -131,8 +124,7 @@ nav.navbar ul li a:hover:after {
   }
   .imgBox {
     z-index: 2;
-    margin-left: 100px;
-
+    margin-left: 50px;
     img {
       width: 520px;
     }
@@ -151,8 +143,6 @@ nav.navbar ul li a:hover:after {
   flex-direction: column;
   h2 {
     margin-bottom: 100px;
-    font-size: 2.7em;
-    font-weight: lighter;
   }
 }
 .headline:after {
@@ -165,7 +155,6 @@ nav.navbar ul li a:hover:after {
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-
   left: 50%;
   transform: translateX(-50%);
 }
@@ -200,11 +189,8 @@ nav.navbar ul li a:hover:after {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-
   h2 {
-    font-size: 2.7em;
     margin-bottom: 50px;
-    font-weight: lighter;
   }
 }
 .pro-headline:after {
@@ -217,7 +203,6 @@ nav.navbar ul li a:hover:after {
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-
   left: 50%;
   transform: translateX(-50%);
 }
