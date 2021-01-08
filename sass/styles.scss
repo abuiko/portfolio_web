@@ -6,7 +6,9 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  min-height: 100vh;
+  // min-height: 100vh;
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 header {
@@ -136,7 +138,7 @@ nav.navbar ul li a:hover:after {
 /*----------------------------------Instruments-------------------------------*/
 #instruments {
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -39,7 +39,9 @@ a {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
+  /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 header {
@@ -199,7 +201,7 @@ nav.navbar ul li a:hover:after {
 /*----------------------------------Instruments-------------------------------*/
 #instruments {
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,9 +531,47 @@ nav.navbar ul li a:hover:after {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
   }
+  .content-wrapper .textBox {
+    width: 300px;
+  }
+  .content-wrapper .textBox h1 {
+    font-size: 2.4em;
+  }
+  .content-wrapper .textBox p {
+    font-size: 1.1em;
+  }
+  .content-wrapper .imgBox img {
+    width: 300px;
+  }
+  .icons li {
+    margin-right: 10px;
+  }
+  .icons i {
+    font-size: 2.3em;
+  }
+  #instruments .headline {
+    font-size: 2.3em;
+  }
+  .instruments {
+    max-width: 600px;
+  }
+  .circle {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+  }
+  .circle img {
+    width: 80px;
+  }
+  #projects h2 {
+    font-size: 2.3em;
+  }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 490px) {
+  .navbar {
+    width: 80%;
+  }
   .content-wrapper {
     padding: 20px 0px;
   }
@@ -549,29 +589,23 @@ nav.navbar ul li a:hover:after {
   .content-wrapper .imgBox img {
     width: 250px;
   }
-  .icons li {
-    margin-right: 10px;
-  }
-  .icons i {
-    font-size: 1.9em;
-  }
-  .project-box {
-    width: 330px;
-  }
   #instruments .headline {
     margin-bottom: 50px;
-    font-size: 2em;
+    font-size: 1.8em;
   }
-  .circle {
-    width: 90px;
-    height: 90px;
+  .instruments .circle {
+    width: 80px;
+    height: 80px;
     margin: 10px;
   }
-  .circle img {
-    width: 60px;
+  .instruments .circle img {
+    width: 50px;
   }
   #projects h2 {
-    font-size: 2em;
+    font-size: 1.8em;
+  }
+  .project-box {
+    width: 300px;
   }
   .contact .contact-text p {
     font-size: 0.9em;
