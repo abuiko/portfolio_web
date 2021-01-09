@@ -5,6 +5,12 @@
           box-sizing: border-box;
 }
 
+body {
+  height: 100%;
+  width: 100%;
+  background: #f3f3f3;
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -45,7 +51,7 @@ a {
 }
 
 header {
-  max-width: 1100px;
+  width: 70%;
   margin: auto;
   padding: 20px 0px;
 }
@@ -136,7 +142,7 @@ nav.navbar ul li a:hover:after {
 }
 
 #content {
-  max-width: 1100px;
+  width: 70%;
   margin: auto;
 }
 
@@ -146,9 +152,8 @@ nav.navbar ul li a:hover:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -237,7 +242,7 @@ nav.navbar ul li a:hover:after {
 }
 
 .instruments {
-  max-width: 700px;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,12 +256,35 @@ nav.navbar ul li a:hover:after {
       flex-wrap: wrap;
 }
 
+.instrument-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.instrument-box h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  font-size: 1em;
+}
+
 .circle {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   background: #fff;
-  margin: 20px;
+  margin: 20px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,10 +294,12 @@ nav.navbar ul li a:hover:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 3px 3px 13px #b8b8b8;
+          box-shadow: 3px 3px 13px #b8b8b8;
 }
 
 .circle img {
-  width: 90px;
+  width: 80px;
 }
 
 /*---------------X-------------------Instruments---------------X----------------*/
