@@ -1,22 +1,25 @@
 @import "config";
-/*-------------------------------------Home content--------------------------------*/
+@import "buttons";
+
 .background {
   width: 100%;
   background-image: url("/img/background.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  // min-height: 100vh;
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
 }
 
+/*=================
+navigation
+==================*/
 header {
   width: 70%;
   margin: auto;
   padding: 20px 0px;
 
-  .navbar {
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,20 +32,33 @@ header {
   letter-spacing: 1px;
   color: #fff;
 }
-.nav-items {
+.nav-list {
   display: flex;
   align-items: center;
-  li {
+  .nav-item {
     margin-left: 30px;
-    a {
+    .nav-link {
       color: #fff;
       font-size: 1em;
       font-family: "Montserrat", sans-serif;
     }
   }
 }
+.burger {
+  display: none;
+  cursor: pointer;
+  .line {
+    width: 35px;
+    height: 3px;
+    background: #fff;
+    margin-bottom: 3px;
+  }
+}
 
-// stroke
+/*=================
+underline stroke when hover the link
+===================*/
+
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
@@ -72,17 +88,10 @@ nav.navbar ul li a:after {
 nav.navbar ul li a:hover:after {
   width: 100%;
 }
-// stroke x
-.burger {
-  display: none;
-  cursor: pointer;
-  .line {
-    width: 35px;
-    height: 3px;
-    background: #fff;
-    margin-bottom: 3px;
-  }
-}
+
+/*===================
+headline + main image
+===========*/
 
 #content {
   width: 70%;
@@ -129,14 +138,14 @@ nav.navbar ul li a:hover:after {
     z-index: 2;
     margin-left: 50px;
     img {
-      width: 520px;
+      width: 600px;
     }
   }
 }
 
-/*---------------X----------------------Home content---------------X-----------------*/
-
-/*----------------------------------Instruments-------------------------------*/
+/*=============
+Logos section
+===============*/
 #instruments {
   width: 100%;
   min-height: 90vh;
@@ -184,8 +193,8 @@ nav.navbar ul li a:hover:after {
 .circle {
   width: 120px;
   height: 120px;
+  background: #f3f3f3;
   border-radius: 50%;
-  background: #fff;
   margin: 20px 40px;
   display: flex;
   justify-content: center;
@@ -196,9 +205,9 @@ nav.navbar ul li a:hover:after {
   }
 }
 
-/*---------------X-------------------Instruments---------------X----------------*/
-
-/*------------------------------------Projects section ------------------------------*/
+/*============
+project cards section
+=============*/
 #projects {
   min-height: 100vh;
   width: 100%;
@@ -288,8 +297,10 @@ nav.navbar ul li a:hover:after {
     }
   }
 }
-/*-----------------X-------------------Projects section ---------------X---------------*/
 
+/*=============
+footer with contact btn and info
+============*/
 .wrapper {
   background-image: url("/img/footer.png");
   background-repeat: no-repeat;
@@ -317,13 +328,5 @@ nav.navbar ul li a:hover:after {
     }
   }
 }
-.footer-btn {
-  color: #000;
-  background: #fff;
-  padding: 10px 26px;
-  display: inline-block;
-  margin-top: 20px;
-  border-radius: 15px;
-  font-size: 1.3em;
-}
+
 @import "mobile";
