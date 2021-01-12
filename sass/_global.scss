@@ -12,13 +12,24 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   line-height: 1.3;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 a,
 a:visited,
 a:hover {
   text-decoration: none;
-  color: var(--grayBlack);
 }
+// Spacing
+
+.container {
+  padding-left: 1.375rem;
+  padding-right: 1.375rem;
+}
+
+// Flexbox
 .flex {
   display: flex;
   &-jc-sb {

@@ -1,11 +1,13 @@
 .header {
+  position: relative;
+  z-index: 1;
   // Hamburger open styles
 
   &.open {
     .overlay {
       display: block;
     }
-    .header__menu {
+    .header__toggle {
       > span:first-child {
         transform: rotate(45deg);
         transform-origin: center left;
@@ -29,7 +31,10 @@
     background: linear-gradient(to bottom, #383838, transparent);
   }
   nav {
-    padding: 2.6875rem 1.375rem;
+    position: relative;
+    background: #fff;
+    padding-top: 2.6875rem;
+    padding-bottom: 2.6875rem;
     width: 90%;
     margin: auto;
   }
@@ -40,7 +45,7 @@
     font-family: "Montserrat", sans-serif;
   }
 
-  &__menu {
+  &__toggle {
     span {
       display: block;
       width: 29px;
@@ -53,6 +58,22 @@
       }
     }
   }
+  &__menu {
+    position: absolute;
+    background: #fff;
+    padding: 1.625rem;
+    border-radius: 5px;
+    width: calc(100% - 3rem);
+    left: 50%;
+    margin-top: 1.5rem;
+    transform: translateX(-50%);
+    a {
+      display: block;
+      color: #383838;
+      padding: 0.625rem;
+      text-align: center;
+    }
+  }
   &__links {
     a {
       font-size: 0.9375rem;
@@ -61,6 +82,7 @@
     }
     a:not(:last-child) {
       margin-right: 4.875rem;
+      color: #383838;
       &::before {
         content: "";
         display: block;
