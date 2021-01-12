@@ -1,0 +1,30 @@
+.header {
+  nav {
+    padding: 2.6875rem 1.375rem;
+    width: 90%;
+    margin: auto;
+  }
+  &__logo {
+    color: var(--grayBlack);
+    font-size: 1.875rem;
+    font-weight: lighter;
+    font-family: "Montserrat", sans-serif;
+  }
+  &__menu {
+    span {
+      display: block;
+      width: 29px;
+      height: 3px;
+      margin: 4px;
+      background-color: var(--grayBlack);
+    }
+  }
+  &__links {
+    a {
+      font-size: 0.9375rem;
+    }
+    a:not(:last-child) {
+      margin-right: 4.875rem;
+    }
+  }
+}
