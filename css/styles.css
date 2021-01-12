@@ -62,7 +62,14 @@ a:hover {
   background: -webkit-gradient(linear, left top, right top, from(#1b6a92), to(#cc6b9b));
   background: linear-gradient(to right, #1b6a92, #cc6b9b);
   border-radius: 20px;
-  color: var(--white);
+  color: #fff;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.primary-btn:hover {
+  opacity: 0.75;
+  color: white;
 }
 
 @media (max-width: 63.9375em) {
@@ -100,9 +107,30 @@ a:hover {
 
 .header__links a {
   font-size: 0.9375rem;
+  position: relative;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 .header__links a:not(:last-child) {
   margin-right: 4.875rem;
+}
+
+.header__links a:not(:last-child)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+
+.header__links a:not(:last-child):hover {
+  color: #000;
+}
+
+.header__links a:not(:last-child):hover::before {
+  background: #1b6a92;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -22,9 +22,26 @@
   &__links {
     a {
       font-size: 0.9375rem;
+      position: relative;
+      transition: all 400ms ease-in-out;
     }
     a:not(:last-child) {
       margin-right: 4.875rem;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+      }
+      &:hover {
+        color: #000;
+        &::before {
+          background: #1b6a92;
+        }
+      }
     }
   }
 }
