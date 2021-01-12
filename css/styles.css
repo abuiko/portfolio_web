@@ -6,6 +6,80 @@
   --grayBlack: #383838;
 }
 
+.has-fade {
+  visibility: hidden;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 200ms ease-in-out forwards;
+          animation: fade-in 200ms ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 200ms ease-in-out forwards;
+          animation: fade-out 200ms ease-in-out forwards;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -37,8 +111,10 @@ a:hover {
 }
 
 .container {
-  padding-left: 1.375rem;
+  max-width: 70.625rem;
+  margin: auto;
   padding-right: 1.375rem;
+  padding-left: 1.375rem;
 }
 
 .flex {
@@ -133,8 +209,8 @@ a:hover {
 .header nav {
   position: relative;
   background: #fff;
-  padding-top: 2.6875rem;
-  padding-bottom: 2.6875rem;
+  padding-top: 2.2875rem;
+  padding-bottom: 2.2875rem;
   width: 90%;
   margin: auto;
 }
@@ -208,77 +284,127 @@ a:hover {
   background: #1b6a92;
 }
 
-.has-fade {
-  visibility: hidden;
-}
-
-@-webkit-keyframes fade-in {
-  from {
-    visibility: hidden;
-    opacity: 0;
-  }
-  1% {
-    visibility: visible;
-    opacity: 0;
-  }
-  to {
-    visibility: visible;
-    opacity: 1;
+@media (min-width: 64em) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
-@keyframes fade-in {
-  from {
-    visibility: hidden;
-    opacity: 0;
-  }
-  1% {
-    visibility: visible;
-    opacity: 0;
-  }
-  to {
-    visibility: visible;
-    opacity: 1;
+.hero__text {
+  min-height: 13.75rem;
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .hero__text {
+    min-height: 18.75rem;
+    text-align: center;
   }
 }
 
-.fade-in {
-  -webkit-animation: fade-in 200ms ease-in-out forwards;
-          animation: fade-in 200ms ease-in-out forwards;
-}
-
-@-webkit-keyframes fade-out {
-  from {
-    opacity: 1;
-    visibility: visible;
-  }
-  99% {
-    visibility: visible;
-    opacity: 0;
-  }
-  to {
-    visibility: hidden;
-    opacity: 0;
+@media (min-width: 64em) {
+  .hero__text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: left;
   }
 }
 
-@keyframes fade-out {
-  from {
-    opacity: 1;
-    visibility: visible;
-  }
-  99% {
-    visibility: visible;
-    opacity: 0;
-  }
-  to {
-    visibility: hidden;
-    opacity: 0;
+.hero__text h1 {
+  font-size: 1.875rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin-bottom: 1.375rem;
+  font-family: "Montserrat", sans-serif;
+  color: #1b6a92;
+}
+
+@media (min-width: 40em) {
+  .hero__text h1 {
+    font-size: 3.0625rem;
   }
 }
 
-.fade-out {
-  -webkit-animation: fade-out 200ms ease-in-out forwards;
-          animation: fade-out 200ms ease-in-out forwards;
+@media (min-width: 64em) {
+  .hero__text h1 {
+    font-size: 3.0625rem;
+    margin-top: 0;
+  }
+}
+
+.hero__text p {
+  font-size: 0.875rem;
+  letter-spacing: 0.1rem;
+  font-weight: lighter;
+  width: 12.5rem;
+  margin: 1.895rem auto;
+  color: #383838;
+}
+
+@media (min-width: 40em) {
+  .hero__text p {
+    font-size: 1.65rem;
+    width: 25rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero__text p {
+    font-size: 1.65rem;
+    width: 25rem;
+    margin: 1.895rem 0rem;
+  }
+}
+
+.hero__text a {
+  margin-right: 0.5625rem;
+  display: incline-block;
+}
+
+.hero__text a i {
+  color: #1b6a92;
+}
+
+@media (min-width: 40em) {
+  .hero__text a i {
+    font-size: 2.625rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero__text a i {
+    font-size: 2.625rem;
+  }
+}
+
+.hero__image {
+  background-image: url("/img/main-image.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 14.375rem;
+}
+
+@media (min-width: 40em) {
+  .hero__image {
+    min-height: 25rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero__image {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-size: 100%;
+    min-height: 45rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
