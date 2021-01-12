@@ -1,4 +1,33 @@
 .header {
+  // Hamburger open styles
+
+  &.open {
+    .overlay {
+      display: block;
+    }
+    .header__menu {
+      > span:first-child {
+        transform: rotate(45deg);
+        transform-origin: center left;
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+        transform-origin: 5px 4px;
+      }
+    }
+  }
+  .overlay {
+    opacity: 0;
+    position: fixed;
+    top: 7.8125rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #383838, transparent);
+  }
   nav {
     padding: 2.6875rem 1.375rem;
     width: 90%;
@@ -10,13 +39,18 @@
     font-weight: lighter;
     font-family: "Montserrat", sans-serif;
   }
+
   &__menu {
     span {
       display: block;
       width: 29px;
       height: 3px;
-      margin: 4px;
       background-color: var(--grayBlack);
+      transition: all 300ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
     }
   }
   &__links {

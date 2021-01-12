@@ -84,6 +84,39 @@ a:hover {
   }
 }
 
+.header.open .overlay {
+  display: block;
+}
+
+.header.open .header__menu > span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+}
+
+.header.open .header__menu > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .header__menu > span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 5px 4px;
+          transform-origin: 5px 4px;
+}
+
+.header .overlay {
+  opacity: 0;
+  position: fixed;
+  top: 7.8125rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#383838), to(transparent));
+  background: linear-gradient(to bottom, #383838, transparent);
+}
+
 .header nav {
   padding: 2.6875rem 1.375rem;
   width: 90%;
@@ -101,8 +134,13 @@ a:hover {
   display: block;
   width: 29px;
   height: 3px;
-  margin: 4px;
   background-color: var(--grayBlack);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.header__menu span:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 .header__links a {
@@ -132,5 +170,73 @@ a:hover {
 
 .header__links a:not(:last-child):hover::before {
   background: #1b6a92;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 300ms ease-in-out forwards;
+          animation: fade-in 300ms ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 300ms ease-in-out forwards;
+          animation: fade-out 300ms ease-in-out forwards;
 }
 /*# sourceMappingURL=styles.css.map */
