@@ -1,6 +1,10 @@
 .icons {
+  &__content {
+    background: rgb(247, 247, 247);
+    width: 100%;
+  }
   &__head {
-    margin: 2.875rem 0;
+    margin-bottom: 2.475rem;
     text-align: center;
     font-size: 1.3rem;
     @include breakpoint-up(medium) {
@@ -9,6 +13,7 @@
   }
 
   &__wrapper {
+    width: 18.75rem;
     flex-wrap: wrap;
     text-align: center;
     margin-bottom: 2.875rem;
@@ -16,20 +21,20 @@
     @include breakpoint-up(medium) {
       width: 35.25rem;
     }
-
-    .icon {
-      margin: 0.9375rem 1.2688rem;
-      p {
-        font-size: 0.5rem;
-        @include breakpoint-up(medium) {
-          font-size: 1rem;
-        }
+  }
+  &__box {
+    padding: 1rem;
+    // flex: 1 0 6rem;
+    p {
+      font-size: 0.5rem;
+      @include breakpoint-up(medium) {
+        font-size: 1rem;
       }
-      img {
-        width: 2.375rem;
-        @include breakpoint-up(medium) {
-          width: 4.375rem;
-        }
+    }
+    img {
+      width: 2.375rem;
+      @include breakpoint-up(medium) {
+        width: 4.375rem;
       }
     }
   }
