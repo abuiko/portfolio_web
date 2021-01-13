@@ -17,6 +17,19 @@ body {
     overflow: hidden;
   }
 }
+h1,
+h2,
+h3 {
+  font-weight: lighter;
+  font-family: "Montserrat", sans-serif;
+  color: #1b6a92;
+}
+p {
+  color: #383838;
+  letter-spacing: 0.0825rem;
+  font-weight: lighter;
+}
+
 a,
 a:visited,
 a:hover {
@@ -37,7 +50,7 @@ a:hover {
   &-jc-sb {
     justify-content: space-between;
   }
-  &-js-c {
+  &-jc-c {
     justify-content: center;
   }
   &-ai-c {

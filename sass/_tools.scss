@@ -1,0 +1,36 @@
+.icons {
+  &__head {
+    margin: 2.875rem 0;
+    text-align: center;
+    font-size: 1.3rem;
+    @include breakpoint-up(medium) {
+      font-size: 2.325rem;
+    }
+  }
+
+  &__wrapper {
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 2.875rem;
+    min-height: 19.375rem;
+    @include breakpoint-up(medium) {
+      width: 35.25rem;
+    }
+
+    .icon {
+      margin: 0.9375rem 1.2688rem;
+      p {
+        font-size: 0.5rem;
+        @include breakpoint-up(medium) {
+          font-size: 1rem;
+        }
+      }
+      img {
+        width: 2.375rem;
+        @include breakpoint-up(medium) {
+          width: 4.375rem;
+        }
+      }
+    }
+  }
+}
