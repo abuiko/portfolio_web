@@ -58,7 +58,7 @@
       transition: transform 200ms ease-in-out;
 
       i {
-        color: #1b6a92;
+        color: $blue;
         margin-right: 0.8625rem;
 
         @include breakpoint-up(medium) {

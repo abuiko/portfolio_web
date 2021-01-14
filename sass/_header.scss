@@ -7,20 +7,24 @@
     .overlay {
       display: block;
     }
+
     .header__toggle {
-      > span:first-child {
+      >span:first-child {
         transform: rotate(45deg);
         transform-origin: center left;
       }
-      > span:nth-child(2) {
+
+      >span:nth-child(2) {
         opacity: 0;
       }
-      > span:last-child {
+
+      >span:last-child {
         transform: rotate(-45deg);
         transform-origin: 5px 4px;
       }
     }
   }
+
   .overlay {
     opacity: 0;
     position: fixed;
@@ -28,8 +32,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, #383838, transparent);
+    background: linear-gradient(to bottom, $gray, transparent);
   }
+
   nav {
     position: relative;
     background: #fff;
@@ -38,6 +43,7 @@
     width: 90%;
     margin: auto;
   }
+
   &__logo {
     color: var(--grayBlack);
     font-size: 1.875rem;
@@ -50,7 +56,7 @@
       display: block;
       width: 29px;
       height: 3px;
-      background-color: var(--grayBlack);
+      background-color: $gray;
       transition: all 300ms ease-in-out;
 
       &:not(:last-child) {
@@ -58,31 +64,36 @@
       }
     }
   }
+
   &__menu {
     position: absolute;
-    background: #fff;
+    background: $white;
     padding: 1.625rem;
     border-radius: 5px;
     width: calc(100% - 3rem);
     left: 50%;
     margin-top: 1.5rem;
     transform: translateX(-50%);
+
     a {
       display: block;
-      color: #383838;
+      color: $gray;
       padding: 0.625rem;
       text-align: center;
     }
   }
+
   &__links {
     a {
       font-size: 0.9375rem;
       position: relative;
       transition: all 400ms ease-in-out;
     }
+
     a:not(:last-child) {
       margin-right: 4.875rem;
-      color: #383838;
+      color: $gray;
+
       &::before {
         content: "";
         display: block;
@@ -92,10 +103,12 @@
         right: 0;
         bottom: -10px;
       }
+
       &:hover {
-        color: #000;
+        color: $black;
+
         &::before {
-          background: #1b6a92;
+          background: $blue;
         }
       }
     }
