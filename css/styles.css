@@ -112,6 +112,29 @@ h3 {
   color: #1b6a92;
 }
 
+h2 {
+  position: relative;
+}
+
+h2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 5.125rem;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 40px;
+  background: #1b6a92;
+}
+
+@media (min-width: 40em) {
+  h2::before {
+    top: 70px;
+  }
+}
+
 p {
   color: #383838;
   letter-spacing: 0.0825rem;
