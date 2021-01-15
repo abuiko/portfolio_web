@@ -30,6 +30,11 @@ h3 {
 
 h2 {
   position: relative;
+  font-size: 1.5rem;
+
+  @include breakpoint-up(medium) {
+    font-size: 2.325rem;
+  }
 
   &::before {
     content: "";
@@ -45,6 +50,7 @@ h2 {
 
     @include breakpoint-up(medium) {
       top: 70px;
+
     }
   }
 }
@@ -53,6 +59,11 @@ p {
   color: $gray;
   letter-spacing: 0.0825rem;
   font-weight: lighter;
+  font-size: 0.9375rem;
+
+  @include breakpoint-up(medium) {
+    font-size: 1.1rem;
+  }
 }
 
 a,
