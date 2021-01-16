@@ -55,6 +55,14 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 1.3rem;
+
+  @include breakpoint-up(medium) {
+    font-size: 2rem;
+  }
+}
+
 p {
   color: $gray;
   letter-spacing: 0.0825rem;
@@ -82,8 +90,8 @@ a:hover {
 }
 
 .container-pall {
-  padding-bottom: 3.25rem;
-  padding-top: 3.25rem;
+  padding-top: 4.6875rem;
+  padding-bottom: 4.6875rem;
 }
 
 // Flexbox
