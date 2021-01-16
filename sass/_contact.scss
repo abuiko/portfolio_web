@@ -28,3 +28,75 @@
         }
     }
 }
+
+.contact__form {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.form-wrapper {
+    width: 90%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border-radius: 20px;
+    background: rgb(204, 204, 204);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("/img/contact-illustration.png");
+    background-position: bottom;
+    background-size: 900px 400px;
+    background-repeat: no-repeat;
+
+
+
+    // text-align: center;
+    h2 {
+        text-align: center;
+        padding-bottom: 3rem;
+
+
+        &::before {
+            display: none;
+        }
+    }
+}
+
+form {
+    flex-direction: column;
+
+
+    label {
+
+        padding-bottom: 1rem;
+        padding-top: 0.7rem;
+        color: $blue;
+
+    }
+
+    input,
+    textarea {
+        width: 90%;
+        padding: 0.4rem;
+        border: none;
+        background: $white;
+        border-radius: 10px;
+    }
+
+    button {
+        margin-top: 1.8rem;
+        margin-bottom: 1.8rem;
+        width: 90%;
+        padding: 0.6rem;
+        border: none;
+        border-radius: 10px;
+        color: $white;
+        background: $blue;
+    }
+
+
+}

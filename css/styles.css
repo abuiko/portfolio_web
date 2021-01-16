@@ -829,4 +829,71 @@ a:hover {
 .contact__button a {
   color: white;
 }
+
+.contact__form {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.form-wrapper {
+  width: 90%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border-radius: 20px;
+  background: #cccccc;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url("/img/contact-illustration.png");
+  background-position: bottom;
+  background-size: 900px 400px;
+  background-repeat: no-repeat;
+}
+
+.form-wrapper h2 {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.form-wrapper h2::before {
+  display: none;
+}
+
+form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form label {
+  padding-bottom: 1rem;
+  padding-top: 0.7rem;
+  color: #1d6b92;
+}
+
+form input,
+form textarea {
+  width: 90%;
+  padding: 0.4rem;
+  border: none;
+  background: white;
+  border-radius: 10px;
+}
+
+form button {
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+  width: 90%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background: #1d6b92;
+}
 /*# sourceMappingURL=styles.css.map */
