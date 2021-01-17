@@ -201,8 +201,7 @@ a:hover {
 
 .primary-btn {
   padding: 0.75rem 2.5rem;
-  background: -webkit-gradient(linear, left top, right top, from(#1d6b92), to(#cc6b9c));
-  background: linear-gradient(to right, #1d6b92, #cc6b9c);
+  background: #1d6b92;
   border-radius: 20px;
   color: white;
   -webkit-transition: all 300ms ease-in-out;
@@ -274,8 +273,8 @@ a:hover {
 }
 
 .header__logo {
-  color: var(--grayBlack);
-  font-size: 1.875rem;
+  color: #1d6b92;
+  font-size: 2.1rem;
   font-weight: lighter;
   font-family: "Montserrat", sans-serif;
 }
@@ -313,7 +312,8 @@ a:hover {
 }
 
 .header__links a {
-  font-size: 0.9375rem;
+  font-size: 0.9875rem;
+  font-weight: lighter;
   position: relative;
   -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
@@ -831,11 +831,19 @@ a:hover {
 }
 
 .contact__form {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(rgba(0, 0, 0, 0.5)), to(transparent));
+  background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.5), transparent);
+  z-index: 2;
+}
+
+.contact__form.active {
+  display: block;
 }
 
 .form-wrapper {
@@ -843,7 +851,8 @@ a:hover {
   padding-top: 5rem;
   padding-bottom: 5rem;
   border-radius: 20px;
-  background: #cccccc;
+  border: 1px solid magenta;
+  background: white;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -855,9 +864,37 @@ a:hover {
   background-repeat: no-repeat;
 }
 
+@media (min-width: 40em) {
+  .form-wrapper {
+    width: 70%;
+  }
+}
+
+@media (min-width: 64em) {
+  .form-wrapper {
+    width: 50%;
+    background-size: 1200px 400px;
+  }
+}
+
+.form-wrapper span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #1d6b92;
+  padding: 0.4rem 0.8rem;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
 .form-wrapper h2 {
   text-align: center;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .form-wrapper h2::before {
@@ -872,18 +909,35 @@ form {
 }
 
 form label {
-  padding-bottom: 1rem;
-  padding-top: 0.7rem;
+  display: inline;
+  padding-bottom: 0.5rem;
+  padding-top: 1.2rem;
   color: #1d6b92;
+  font-size: 1.1rem;
 }
 
 form input,
 form textarea {
   width: 90%;
   padding: 0.4rem;
-  border: none;
-  background: white;
+  border: 1px solid #dadada;
+  background: #f7f7f7;
+  opacity: 0.75;
   border-radius: 10px;
+}
+
+@media (min-width: 40em) {
+  form input,
+  form textarea {
+    width: 70%;
+  }
+}
+
+@media (min-width: 64em) {
+  form input,
+  form textarea {
+    width: 60%;
+  }
 }
 
 form button {
@@ -895,5 +949,18 @@ form button {
   border-radius: 10px;
   color: white;
   background: #1d6b92;
+  font-size: 1rem;
+}
+
+@media (min-width: 40em) {
+  form button {
+    width: 70%;
+  }
+}
+
+@media (min-width: 64em) {
+  form button {
+    width: 60%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

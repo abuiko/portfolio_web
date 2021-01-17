@@ -20,3 +20,16 @@ burger.addEventListener("click", () => {
     });
   }
 });
+
+const contactForm = document.querySelector(".contact__form");
+const closeContact = document.querySelector(".form-wrapper span");
+const contactBtn = document.querySelector(".contact__button");
+
+contactBtn.addEventListener("click", () => {
+  contactForm.classList.add("active");
+  body.classList.add("no-scroll");
+  closeContact.addEventListener("click", () => {
+    contactForm.classList.remove("active");
+    body.classList.remove("no-scroll");
+  });
+});

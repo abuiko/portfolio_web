@@ -45,8 +45,8 @@
   }
 
   &__logo {
-    color: var(--grayBlack);
-    font-size: 1.875rem;
+    color: $blue;
+    font-size: 2.1rem;
     font-weight: lighter;
     font-family: "Montserrat", sans-serif;
   }
@@ -80,12 +80,15 @@
       color: $gray;
       padding: 0.625rem;
       text-align: center;
+
+
     }
   }
 
   &__links {
     a {
-      font-size: 0.9375rem;
+      font-size: 0.9875rem;
+      font-weight: lighter;
       position: relative;
       transition: all 400ms ease-in-out;
     }
