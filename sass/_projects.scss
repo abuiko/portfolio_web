@@ -83,6 +83,12 @@
             padding: 0.4rem 2.3rem;
             color: $white;
             border-radius: 10px;
+            transition: all 300ms ease-in-out;
+
+
+            &:hover {
+                background-color: #0c3549;
+            }
         }
 
     }
@@ -106,6 +112,13 @@
             border: 1px solid $blue;
             color: $blue;
             border-radius: 10px;
+            transition: all 100ms ease-in-out;
+
+            &:hover {
+                border: 2px solid $blue;
+
+            }
+
 
         }
 

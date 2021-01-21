@@ -123,8 +123,9 @@ a:hover {
   transition: all 300ms ease-in-out;
 
   &:hover {
-    opacity: 0.75;
-    color: $white;
+
+    background-color: #0c3549;
+
   }
 }
 
