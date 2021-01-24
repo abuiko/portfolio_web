@@ -508,12 +508,18 @@ a:hover {
 }
 
 .icons__about img {
-  width: 150px;
+  width: 110px;
+}
+
+@media (min-width: 40em) {
+  .icons__about img {
+    width: 180px;
+  }
 }
 
 @media (min-width: 64em) {
   .icons__about img {
-    width: 250px;
+    width: 210px;
   }
 }
 
@@ -903,7 +909,7 @@ a:hover {
   background: white;
   border-radius: 50%;
   margin: 0 auto 2rem;
-  background-image: url("/img/avatar.png");
+  background-image: url("/img/about-avatar.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -16,10 +16,14 @@
     }
 
     img {
-      width: 150px;
+      width: 110px;
+
+      @include breakpoint-up(medium) {
+        width: 180px;
+      }
 
       @include breakpoint-up(large) {
-        width: 250px;
+        width: 210px;
       }
 
     }
