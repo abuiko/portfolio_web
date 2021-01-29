@@ -1,25 +1,17 @@
 const burger = document.querySelector("#btnHamburger");
-const header = document.querySelector(".header");
-const overlay = document.querySelector(".overlay");
-const fadeElems = document.querySelectorAll(".has-fade");
+const headerMenu = document.querySelector(".header__menu");
 const body = document.querySelector("body");
 
-burger.addEventListener("click", () => {
-  header.classList.toggle("open");
-  body.classList.add("no-scroll");
-  if (header.classList.contains("open")) {
-    fadeElems.forEach((element, index) => {
-      element.classList.remove("fade-out");
-      element.classList.add("fade-in");
-    });
+burger.addEventListener('click', () => {
+  headerMenu.classList.toggle('open');
+  if (headerMenu.classList.contains('open')) {
+    burger.classList.add('open');
+    body.classList.add('no-scroll');
   } else {
-    body.classList.remove("no-scroll");
-    fadeElems.forEach((element, index) => {
-      element.classList.remove("fade-in");
-      element.classList.add("fade-out");
-    });
+    burger.classList.remove('open');
+    body.classList.remove('no-scroll');
   }
-});
+})
 
 const contactForm = document.querySelector(".contact__form");
 const closeContact = document.querySelector(".form-wrapper span");

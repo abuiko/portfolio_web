@@ -1,6 +1,11 @@
 .icons {
   background: $lightgray;
 
+  @include breakpoint-up(large) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   &__about {
     padding-top: 4.6875rem;
     display: flex;
@@ -10,7 +15,7 @@
     width: 90%;
 
     @include breakpoint-up(large) {
-      padding-top: 7.6875rem;
+      padding-top: 4.6875rem;
       flex-direction: row;
       justify-content: space-around;
     }
@@ -53,6 +58,8 @@
   }
 
   &__content {
+    padding-top: 2.6875rem;
+    padding-bottom: 2.6875rem;
 
     width: 100%;
   }
@@ -63,7 +70,6 @@
 
     @include breakpoint-up(medium) {
       margin-top: 5.25rem;
-
     }
 
   }
