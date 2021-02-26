@@ -439,12 +439,12 @@ a:hover {
 }
 
 .icons {
-  background: #f7f7f7;
+  background: #f0fbff;
 }
 
 @media (min-width: 64em) {
   .icons {
-    padding-top: 4rem;
+    padding-top: 3rem;
     padding-bottom: 4rem;
   }
 }
@@ -470,12 +470,6 @@ a:hover {
 @media (min-width: 64em) {
   .icons__about {
     padding-top: 4.6875rem;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
 }
 
@@ -486,12 +480,6 @@ a:hover {
 @media (min-width: 40em) {
   .icons__about img {
     width: 180px;
-  }
-}
-
-@media (min-width: 64em) {
-  .icons__about img {
-    width: 210px;
   }
 }
 
@@ -510,21 +498,15 @@ a:hover {
 
 @media (min-width: 64em) {
   .icons__about .about__text {
-    max-width: 500px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-  }
-}
-
-@media (min-width: 64em) {
-  .icons__about .about__text h2::before {
-    display: none;
+    max-width: 700px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 .icons__about .about__text p {
-  text-align: justify;
+  text-align: center;
 }
 
 .icons__content {
@@ -996,7 +978,7 @@ form textarea {
   width: 90%;
   padding: 0.4rem;
   border: 1px solid #dadada;
-  background: #f7f7f7;
+  background: #f0fbff;
   opacity: 0.75;
   border-radius: 10px;
 }
