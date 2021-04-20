@@ -1,0 +1,28 @@
+.about {
+    background: #1B6A92;
+
+    &__icon {
+        text-align: center;
+        padding-top: 3.8rem;
+        padding-bottom: 3.8rem;
+
+        @include breakpoint-up(large) {
+            width: 600px;
+        }
+
+        img {
+            width: 110px;
+        }
+    }
+
+    &__text {
+        h2 {
+            color: #fff;
+        }
+
+        p {
+            margin-top: 2rem;
+            color: #fff;
+        }
+    }
+}

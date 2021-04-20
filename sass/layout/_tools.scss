@@ -1,56 +1,9 @@
 .icons {
-  background: $lightgray;
+
 
   @include breakpoint-up(large) {
     padding-top: 3rem;
     padding-bottom: 4rem;
-  }
-
-  &__about {
-    padding-top: 4.6875rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-
-    @include breakpoint-up(large) {
-      padding-top: 4.6875rem;
-      // flex-direction: row;
-      // justify-content: space-around;
-    }
-
-    img {
-      width: 110px;
-
-      @include breakpoint-up(medium) {
-        width: 180px;
-      }
-
-    }
-
-    .about__text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      @include breakpoint-up(large) {
-        max-width: 700px;
-        align-items: center;
-      }
-
-      h2 {
-        @include breakpoint-up(large) {
-          &::before {
-            // display: none;
-          }
-        }
-      }
-
-      p {
-        text-align: center;
-      }
-    }
   }
 
   &__content {
