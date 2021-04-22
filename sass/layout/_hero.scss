@@ -4,6 +4,7 @@
     align-items: center;
     padding-top: 8.5rem;
     padding-bottom: 8.5rem;
+    min-height: 750px;
   }
 
   &__text {
@@ -73,6 +74,10 @@
 
       @include breakpoint-up(medium) {
         width: 31.25rem;
+      }
+
+      @include breakpoint-up(large) {
+        width: 35rem;
       }
     }
 
