@@ -1,0 +1,57 @@
+.primary-btn {
+    padding: 0.75rem 2.5rem;
+    background: $blue;
+    border-radius: 20px;
+    color: $white;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+        background-color: #0c3549;
+    }
+}
+
+.grid-full-btn {
+    background: $blue;
+    padding: 0.4rem 2.3rem;
+    color: $white;
+    border-radius: 10px;
+    transition: all 300ms ease-in-out;
+
+
+    &:hover {
+        background-color: #0c3549;
+    }
+}
+
+.grid-empty-btn {
+    padding: 0.4rem 2.6rem;
+    border: 1px solid $blue;
+    color: $blue;
+    border-radius: 10px;
+    transition: all 100ms ease-in-out;
+
+    &:hover {
+        border: 2px solid $blue;
+
+    }
+}
+
+.contact-form-btn {
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    width: 90%;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 10px;
+    color: $white;
+    background: $blue;
+    font-size: 1rem;
+
+    @include breakpoint-up(medium) {
+        width: 70%;
+    }
+
+    @include breakpoint-up(large) {
+        width: 60%;
+    }
+}
