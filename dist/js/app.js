@@ -22,6 +22,7 @@ contactBtn.addEventListener("click", () => {
   body.classList.add("no-scroll");
   closeContact.addEventListener("click", () => {
     contactForm.classList.remove("active");
+
     body.classList.remove("no-scroll");
   });
 });

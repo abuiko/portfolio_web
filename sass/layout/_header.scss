@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  // z-index: 1;
+
   // Hamburger open styles
 
   &.open {
@@ -35,7 +35,7 @@
 
   &__logo {
     color: $blue;
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     font-weight: lighter;
     font-family: "Montserrat", sans-serif;
   }
@@ -117,7 +117,7 @@
 
   &__links {
     a {
-      font-size: 0.9875rem;
+      font-size: 1.1rem;
       font-weight: lighter;
       position: relative;
       transition: all 400ms ease-in-out;

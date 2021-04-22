@@ -40,6 +40,7 @@
     width: 100%;
     background: linear-gradient(to bottom, rgb(17, 21, 56), rgba(0, 0, 0, 0.8), rgba(7, 20, 56, 0.5));
     z-index: 2;
+
 }
 
 .contact__form.active {
@@ -47,6 +48,7 @@
     animation: popupContact 0.5s linear forwards;
     // transition: all 2000s ease-in-out;
 }
+
 
 .form-wrapper {
     width: 90%;
