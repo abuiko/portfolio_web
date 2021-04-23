@@ -1,17 +1,10 @@
 .hero {
-  padding-top: 2rem;
-
-  @include breakpoint-up(medium) {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
 
   @include breakpoint-up(large) {
+    min-height: 770px;
     display: flex;
     align-items: center;
-    padding-top: 8.5rem;
-    padding-bottom: 8.5rem;
-    min-height: 750px;
+    justify-content: space-between;
   }
 
   &__text {
@@ -48,6 +41,7 @@
 
       display: inline-block;
       transition: transform 200ms ease-in-out;
+      transform: scale(1);
 
       i {
         color: $blue;
@@ -65,31 +59,24 @@
 
     a:hover {
       transform: scale(1.1) translateY(-0.3125rem);
-
     }
   }
 
   &__image {
-
     display: flex;
-    align-items: center;
     justify-content: center;
 
     img {
       width: 320px;
 
-
       @include breakpoint-up(medium) {
-        width: 31.25rem;
+        width: 450px;
       }
 
       @include breakpoint-up(large) {
-        width: 35rem;
+        width: 630px;
       }
-    }
 
-    @include breakpoint-up(large) {
-      flex: 1;
     }
   }
 }
