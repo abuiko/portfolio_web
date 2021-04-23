@@ -30,7 +30,6 @@
         @include breakpoint-up(large) {
             grid-column: 1 / 2;
             grid-row: 1 / 4;
-            padding: 3rem;
         }
 
         img {
