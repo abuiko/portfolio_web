@@ -7,7 +7,7 @@
         padding-bottom: 3.8rem;
 
         @include breakpoint-up(large) {
-            width: 600px;
+            width: 680px;
         }
 
         img {
@@ -23,6 +23,32 @@
         p {
             margin-top: 2rem;
             color: #fff;
+        }
+    }
+
+    &__tools {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 1.5rem 0rem 0.5rem;
+
+        @include breakpoint-up(medium) {
+            justify-content: space-around;
+
+        }
+
+        .tool-icon {
+            margin-right: 0.7rem;
+            margin-top: 0.2rem;
+
+            img {
+                width: 50px;
+
+                @include breakpoint-up(large) {
+                    width: 60px;
+                }
+            }
         }
     }
 }
