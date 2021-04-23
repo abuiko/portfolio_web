@@ -49,7 +49,7 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
-            padding: 1rem 3rem;
+            // padding: 1rem 3rem;
         }
 
         p {
@@ -72,7 +72,7 @@
         padding-right: 1rem;
 
         @include breakpoint-up(large) {
-            justify-self: center;
+            // justify-self: center;
             grid-column: 2 / 3;
             grid-row: 3 / 4;
         }
@@ -88,7 +88,7 @@
         margin-top: 2rem;
 
         @include breakpoint-up(large) {
-            justify-self: center;
+            // justify-self: center;
             grid-column: 3 / 4;
             grid-row: 3 / 4;
         }
@@ -150,7 +150,7 @@
         @include breakpoint-up(large) {
             grid-column: 1 / 2;
             grid-row: 3 / 4;
-            justify-self: center;
+            // justify-self: center;
         }
 
     }
@@ -167,7 +167,7 @@
         @include breakpoint-up(large) {
             grid-column: 2 / 3;
             grid-row: 3 / 4;
-            justify-self: center;
+            // justify-self: center;
         }
 
     }
