@@ -17,7 +17,7 @@
 
     @include breakpoint-up(large) {
       text-align: left;
-      flex: 1;
+      margin-bottom: 0rem;
     }
 
     p {
@@ -66,6 +66,8 @@
     display: flex;
     justify-content: center;
 
+
+
     img {
       width: 320px;
 
@@ -74,7 +76,7 @@
       }
 
       @include breakpoint-up(large) {
-        width: 630px;
+        width: 600px;
       }
 
     }
