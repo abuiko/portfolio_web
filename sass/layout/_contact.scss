@@ -20,7 +20,11 @@
         p {
             color: #fff;
             font-weight: normal;
-            font-size: 1.25rem;
+
+            @include breakpoint-up(large) {
+                font-size: 1.25rem;
+            }
+
         }
     }
 
