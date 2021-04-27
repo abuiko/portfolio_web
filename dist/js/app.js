@@ -1,6 +1,25 @@
 const burger = document.querySelector("#btnHamburger");
 const headerMenu = document.querySelector(".header__menu");
 const body = document.querySelector("body");
+const navbar = document.getElementById("header");
+
+// STICKY NAVIGATION BAR
+window.onscroll = function () {
+  stickyNav()
+};
+const sticky = navbar.offsetTop;
+
+function stickyNav() {
+  if (window.pageYOffset > sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+
+// BURGER MENU IN MOBILE MODE 
 
 burger.addEventListener('click', () => {
   headerMenu.classList.toggle('open');
