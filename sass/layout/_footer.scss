@@ -1,0 +1,36 @@
+footer {
+    background: rgb(30, 32, 32);
+}
+
+
+
+.footer {
+    padding: 4rem 0rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__links {
+        a {
+            display: block;
+            margin-bottom: 0.7rem;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    &__icons {
+        i {
+            margin-right: 1rem;
+            color: white;
+            font-size: 35px;
+        }
+    }
+
+    .copyright {
+        color: white;
+        font-size: 15px;
+        font-family: sans-serif;
+        margin-bottom: 0rem;
+    }
+}
