@@ -1,9 +1,9 @@
 .contact {
-    background: rgb(235, 235, 235);
+    background: $blue;
 
     &__icon {
-        width: 120px;
-        height: 120px;
+        width: 130px;
+        height: 130px;
         background: $white;
         border-radius: 50%;
         margin: 0 auto 2rem;
@@ -16,19 +16,21 @@
     &__text {
         text-align: center;
         margin-bottom: 2rem;
-    }
 
-    &__button {
-        background: $blue;
-        text-align: center;
-        padding: 0.7rem 3rem;
-        border-radius: 30px;
-
-
-        a {
-            color: $white;
+        p {
+            color: #fff;
+            font-weight: normal;
+            font-size: 1.25rem;
         }
     }
+
+    &__btn_wrapper {
+        text-align: center;
+
+
+    }
+
+
 }
 
 .contact__form {
