@@ -117,33 +117,22 @@
   }
 
   &__links {
+
+
     a {
-      font-size: 1.1rem;
-      font-weight: lighter;
-      position: relative;
-      transition: all 400ms ease-in-out;
+      font-size: 1rem;
+      // font-weight: lighter;
+
     }
 
     a:not(:last-child) {
       margin-right: 4.875rem;
       color: $gray;
 
-      &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        height: 2px;
-        left: 0;
-        right: 0;
-        bottom: -10px;
-      }
 
       &:hover {
-        color: $black;
+        color: $blue;
 
-        &::before {
-          background: $blue;
-        }
       }
     }
   }
