@@ -2,6 +2,7 @@ const burger = document.querySelector("#btnHamburger");
 const headerMenu = document.querySelector(".header__menu");
 const body = document.querySelector("body");
 const navbar = document.getElementById("header");
+const links = document.querySelectorAll(".nav-items li a");
 
 // STICKY NAVIGATION BAR
 window.onscroll = function () {
@@ -26,6 +27,15 @@ burger.addEventListener('click', () => {
   if (headerMenu.classList.contains('open')) {
     burger.classList.add('open');
     body.classList.add('no-scroll');
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        headerMenu.classList.remove('open');
+        burger.classList.remove('open');
+        body.classList.remove('no-scroll');
+      })
+    })
+
   } else {
     burger.classList.remove('open');
     body.classList.remove('no-scroll');
