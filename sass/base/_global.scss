@@ -10,6 +10,7 @@ html {
 }
 
 body {
+
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
@@ -146,4 +147,15 @@ a:hover {
   @include breakpoint-up(large) {
     display: none;
   }
+}
+
+// FADE IN
+
+.fade-in {
+  visibility: visible;
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-duration: 1.7s;
+  animation-timing-function: ease-in;
 }
