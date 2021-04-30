@@ -90,6 +90,11 @@
     color: $blue;
     cursor: pointer;
 
+    @include breakpoint-up(large) {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
     &:hover {
         background: $blue;
         color: #fff;

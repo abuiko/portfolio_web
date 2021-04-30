@@ -4,8 +4,9 @@
 
     @include breakpoint-up(large) {
         order: 2;
-        display: block;
-        // height: 100px;
+        display: flex;
+        flex-direction: column;
+
 
     }
 }
@@ -13,6 +14,7 @@
 #resume {
     @include breakpoint-up(large) {
         display: flex;
+        justify-content: space-between;
         max-width: 1240px;
         margin: auto;
         padding: 3rem 0rem;
@@ -27,8 +29,13 @@
     }
 
     &__title {
-        margin-bottom: 0.2rem;
-        width: 30%;
+        text-align: center;
+
+        @include breakpoint-up(large) {
+            margin-bottom: 0.2rem;
+            width: 30%;
+        }
+
     }
 
     &__header {
@@ -86,22 +93,26 @@
             position: relative;
             text-align: justify;
             font-size: 0.78rem;
-            margin-left: 2rem;
+
 
             @include breakpoint-up(large) {
                 font-size: 1.1rem;
+                position: relative;
+                margin-left: 2rem;
             }
         }
 
         p:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -30px;
-            bottom: 0;
-            background: $blue;
-            height: 100%;
-            width: 2px;
+            @include breakpoint-up(large) {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -30px;
+                bottom: 0;
+                background: $blue;
+                height: 100%;
+                width: 1px;
+            }
         }
     }
 
@@ -110,6 +121,7 @@
         @include breakpoint-up(large) {
             display: flex;
             justify-content: space-between;
+            margin-top: 3rem;
         }
 
         .resume__content__left {
@@ -186,7 +198,7 @@
             left: -40px;
             top: 10px;
             bottom: 0;
-            width: 2px;
+            width: 1px;
             height: 100%;
             background: $blue;
         }
