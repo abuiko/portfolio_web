@@ -1,0 +1,79 @@
+.resume {
+    padding: 0rem 1rem;
+
+    &__header {
+        text-align: center;
+
+        .job {
+            font-size: 1.025rem;
+            font-weight: normal;
+        }
+
+        .info-table {
+            margin: auto;
+
+            p {
+                margin-left: 1rem;
+                text-align: left;
+            }
+
+            i {
+                font-size: 19px;
+                color: $blue;
+            }
+        }
+    }
+
+    &__profile {
+        p {
+            text-align: justify;
+            font-size: 0.78rem;
+        }
+    }
+
+    &__content {
+        .resume__content__left {
+            .degree {
+                font-size: 1.025rem;
+                font-weight: normal;
+            }
+
+            .major {
+                font-style: italic;
+            }
+
+            .university {
+                font-weight: normal;
+            }
+
+            .skills {
+                li {
+                    font-weight: lighter;
+                    letter-spacing: 0.08rem;
+                    line-height: 2;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+        .resume__content__right {
+            .experience {
+                .title {
+                    font-weight: bold;
+                    font-size: 1rem;
+                    letter-spacing: 0;
+                    line-height: 1.1;
+                }
+
+                .desc {
+                    li {
+                        font-size: 0.9rem;
+
+                    }
+
+                    margin-bottom: 2.4rem;
+                }
+            }
+        }
+    }
+}
