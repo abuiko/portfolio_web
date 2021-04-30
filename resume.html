@@ -1,61 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/css/main.min.css">
-    <title>Portfolio | Resume</title>
-    <link rel="icon" href="dist/icons/lavender.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/css/main.min.css">
+  <title>Portfolio | Resume</title>
+  <link rel="icon" href="dist/icons/lavender.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" />
 </head>
+
 <body>
-    <header id="header" class="header fade-in">
-        <nav id="navbar" class="container flex flex-jc-sb flex-ai-c">
-          <a href="index.html" class="header__logo">AB</a>
-          <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
-          <div class="header__links hide-for-mobile">
-            <a href="index.html">About Me</a>
-            <a href="index.html#projects">My Projects</a>
-            <a href="resume.html">Resume</a>
-            <a class="primary-btn" href="index.html#contact">Contact</a>
+  <header id="header" class="header fade-in">
+    <nav id="navbar" class="container flex flex-jc-sb flex-ai-c">
+      <a href="index.html" class="header__logo">AB</a>
+      <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <div class="header__links hide-for-mobile">
+        <a href="index.html">About Me</a>
+        <a href="index.html#projects">My Projects</a>
+        <a href="resume.html">Resume</a>
+        <a class="primary-btn" href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+    <div class="header__menu">
+      <ul class="nav-items">
+        <li><a href="index.html#about">About Me</a></li>
+        <li><a href="index.html#projects">My Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <section id="resume">
+    <div class="resume">
+      <div class="resume__header">
+        <h1>Alena Buiko</h1>
+        <div class="resume__contact">
+          <p>Front-End Software Engineer</p>
+          <div class="resume__icons">
+            <i class="fas fa-phone-alt"></i>
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-map-marker-alt"></i>
           </div>
-        </nav>
-        <div class="header__menu">
-          <ul class="nav-items">
-            <li><a href="index.html#about">About Me</a></li>
-            <li><a href="index.html#projects">My Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+          <div class="resume__info">
+            <p>mail@gmail.com</p>
+            <p>+1 (646) 868-5454</p>
+            <p>New York, NY</p>
+          </div>
+        </div>
+      </div>
+      <div class="resume__profile">
+        <h3>Profile</h3>
+        <div class="resume__profile__text">
+          <div class="profile-line"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. </p>
+        </div>
+      </div>
+      <div class="resume__content">
+        <div class="resume__content__left">
+          <h3>Education</h3>
+          <h4>Bachelor's Degree</h4>
+          <h4>Foreign Languages, Literatures, and Linguistics</h4>
+          <h4>Minsk State Linguistic University | 2009 - 2014</h4>
+          <h3>Skills</h3>
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+            <li>Sass</li>
+            <li>Figma</li>
+            <li>Adobe Photoshop</li>
           </ul>
         </div>
-      </header>
-      <section class="resume">
-        <embed src="dist/img/resume.pdf" width="100%" height="1200" />
-      </section>
-      <footer>
-        <div class="footer container">
-          <div class="footer__links">
-            <a href="#">Home</a>
-            <a href="#">My Resume</a>
+        <div class="resume__content__right">
+          <h3>Experience</h3>
+          <div class="experience">
+            <h4>Online ESL Teacher | Feb 2017 - Jan 2020</h4>
+            <h4>Bibo Global Opportunity Inc.</h4>
+            <ul>
+              <li>Provided Online English/ Russian lessons to the students worldwide. </li>
+              <li>Dealt with foreign students with different English levels and of different age groups.</li>
+              <li>
+                Reached teaching rating 4.9/5.0.
+              </li>
+            </ul>
           </div>
-          <div class="footer__links">
-            <a href="#">My Projects</a>
-            <a href="#">Contacts</a>
+          <div class="experience">
+            <h4>Online ESL Teacher | Feb 2017 - Jan 2020</h4>
+            <h4>Bibo Global Opportunity Inc.</h4>
+            <ul>
+              <li>Provided Online English/ Russian lessons to the students worldwide. </li>
+              <li>Dealt with foreign students with different English levels and of different age groups.</li>
+              <li>
+                Reached teaching rating 4.9/5.0.
+              </li>
+            </ul>
           </div>
-          <div class="footer__icons">
-            <a href="#"><i class="fab fa-github fa-2x"></i></a>
-            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-          </div>
-          <p class="copyright">Copyright 2021</p>
-          
         </div>
-      </footer>
+      </div>
+    </div>
+    <!-- <embed src="dist/img/resume.pdf" width="100%" height="1200" /> -->
+  </section>
+  <footer>
+    <div class="footer container">
+      <div class="footer__links">
+        <a href="#">Home</a>
+        <a href="#">My Resume</a>
+      </div>
+      <div class="footer__links">
+        <a href="#">My Projects</a>
+        <a href="#">Contacts</a>
+      </div>
+      <div class="footer__icons">
+        <a href="#"><i class="fab fa-github fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p class="copyright">Copyright 2021</p>
+
+    </div>
+  </footer>
 
 </body>
+
 </html>
