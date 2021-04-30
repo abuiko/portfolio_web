@@ -1,22 +1,68 @@
 .resume__btns {
     text-align: center;
     padding: 2rem 0rem 0rem;
+
+    @include breakpoint-up(large) {
+        order: 2;
+        display: block;
+        // height: 100px;
+
+    }
 }
 
+#resume {
+    @include breakpoint-up(large) {
+        display: flex;
+        max-width: 1240px;
+        margin: auto;
+        padding: 3rem 0rem;
+    }
+}
 
 .resume {
     padding: 2rem 1rem 4rem;
 
+    @include breakpoint-up(large) {
+        width: 90%;
+    }
+
+    &__title {
+        margin-bottom: 0.2rem;
+        width: 30%;
+    }
+
     &__header {
         text-align: center;
+
+        .resume__contact {
+            @include breakpoint-up(large) {
+                display: flex;
+                align-items: center;
+
+            }
+        }
 
         .job {
             font-size: 1.025rem;
             font-weight: normal;
+
+            @include breakpoint-up(large) {
+                font-size: 1.7rem;
+                background: $blue;
+                color: #fff;
+                padding: 1.8rem 1.5rem;
+                width: 35%;
+                text-align: left;
+                line-height: 1.8;
+            }
         }
 
         .info-table {
             margin: auto;
+
+            @include breakpoint-up(large) {
+                margin-left: 2rem;
+            }
 
             p {
                 margin-left: 1rem;
@@ -26,22 +72,57 @@
             i {
                 font-size: 19px;
                 color: $blue;
+
+                @include breakpoint-up(large) {
+                    font-size: 1.6375rem;
+                    margin-right: 1rem;
+                }
             }
         }
     }
 
     &__profile {
         p {
+            position: relative;
             text-align: justify;
             font-size: 0.78rem;
+            margin-left: 2rem;
+
+            @include breakpoint-up(large) {
+                font-size: 1.1rem;
+            }
+        }
+
+        p:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -30px;
+            bottom: 0;
+            background: $blue;
+            height: 100%;
+            width: 2px;
         }
     }
 
     &__content {
+
+        @include breakpoint-up(large) {
+            display: flex;
+            justify-content: space-between;
+        }
+
         .resume__content__left {
+
+
             .degree {
                 font-size: 1.025rem;
                 font-weight: normal;
+            }
+
+            .major,
+            .university {
+                width: 80%;
             }
 
             .major {
@@ -58,12 +139,24 @@
                     letter-spacing: 0.08rem;
                     line-height: 2;
                     font-size: 0.9rem;
+
+                    @include breakpoint-up(large) {
+                        font-size: 1.1rem;
+                    }
                 }
             }
         }
 
         .resume__content__right {
+            position: relative;
+
             .experience {
+
+
+                @include breakpoint-up(large) {
+                    max-width: 480px;
+                }
+
                 .title {
                     font-weight: bold;
                     font-size: 1rem;
@@ -75,11 +168,27 @@
                     li {
                         font-size: 0.9rem;
 
+                        @include breakpoint-up(large) {
+                            font-size: 1.1rem;
+                        }
                     }
 
                     margin-bottom: 2.4rem;
                 }
             }
+
+
+        }
+
+        .resume__content__right:before {
+            content: "";
+            position: absolute;
+            left: -40px;
+            top: 10px;
+            bottom: 0;
+            width: 2px;
+            height: 100%;
+            background: $blue;
         }
     }
 }
