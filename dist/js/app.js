@@ -47,7 +47,7 @@ burger.addEventListener('click', () => {
 
 const contactForm = document.querySelector(".contact__form");
 const closeContact = document.querySelector(".form-wrapper span");
-const contactBtn = document.querySelector(".contact__btn_wrapper");
+const contactBtn = document.querySelector(".contact__btn");
 
 contactBtn.addEventListener("click", () => {
   contactForm.classList.add("active");
