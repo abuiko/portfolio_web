@@ -61,8 +61,8 @@
 }
 
 .contact-form-btn {
-    margin-top: 1.8rem;
-    margin-bottom: 1.8rem;
+
+    margin: 1.8rem auto;
     width: 90%;
     padding: 0.6rem;
     border: none;
@@ -70,6 +70,7 @@
     color: $white;
     background: $blue;
     font-size: 1rem;
+    cursor: pointer;
 
     @include breakpoint-up(medium) {
         width: 70%;
@@ -78,6 +79,7 @@
     @include breakpoint-up(large) {
         width: 60%;
     }
+
 }
 
 
