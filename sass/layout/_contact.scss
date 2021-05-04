@@ -39,7 +39,7 @@
 
 .contact__form {
     display: none;
-
+    // display: block;
     position: fixed;
     left: 0;
     top: 0;
@@ -62,9 +62,8 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
-    height: 90%;
 
+    width: 90%;
     padding-top: 3rem;
     padding-bottom: 3rem;
     border-radius: 20px;
@@ -124,8 +123,7 @@ form {
         width: 90%;
         padding: 0.5rem;
         border: 1px solid rgb(218, 218, 218);
-        background: $lightgray;
-        opacity: 0.75;
+        background: $white;
         border-radius: 10px;
 
         @include breakpoint-up(medium) {
@@ -135,5 +133,25 @@ form {
         @include breakpoint-up(large) {
             width: 60%;
         }
+    }
+
+    ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        font-size: 0.9rem;
+        padding-left: 0.5rem;
+        letter-spacing: 0.1rem;
+        /* Firefox */
+    }
+
+    :-ms-input-placeholder {
+        font-size: 0.9rem;
+        padding-left: 0.5rem;
+        letter-spacing: 0.1rem;
+    }
+
+    ::-ms-input-placeholder {
+        font-size: 0.9rem;
+        padding-left: 0.5rem;
+        letter-spacing: 0.1rem;
     }
 }
