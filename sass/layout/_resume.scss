@@ -28,10 +28,16 @@
     &__title {
         text-align: center;
 
+        @include breakpoint-up(medium) {
+            font-size: 2.8rem;
+            margin-bottom: 0.3rem;
+        }
+
         @include breakpoint-up(large) {
-            margin-bottom: 0.2rem;
+
             width: 30%;
             text-align: left;
+
         }
 
     }
@@ -40,16 +46,20 @@
         text-align: center;
 
         .resume__contact {
+
+
             @include breakpoint-up(large) {
                 display: flex;
-                align-items: center;
-
+                // align-items: center;
             }
         }
 
         .job {
-            font-size: 1.025rem;
-            font-weight: normal;
+            font-size: 1.225rem;
+            font-weight: light;
+            color: rgb(70, 70, 70);
+            margin-bottom: 3rem;
+
 
             @include breakpoint-up(large) {
                 font-size: 1.7rem;
@@ -62,28 +72,26 @@
             }
         }
 
-        .info-table {
-            margin: auto;
-
-            @include breakpoint-up(large) {
-                margin-left: 2rem;
-            }
-
-            p {
-                margin-left: 1rem;
-                text-align: left;
-            }
-
+        .contact-wrap {
             i {
-                font-size: 19px;
+                font-size: 1.4625rem;
                 color: $blue;
+                margin-right: 2rem;
+            }
 
-                @include breakpoint-up(large) {
-                    font-size: 1.6375rem;
-                    margin-right: 1rem;
-                }
+            p,
+            a {
+                letter-spacing: 0.03rem;
+                font-size: 0.975rem;
+
+            }
+
+            a {
+                color: black;
             }
         }
+
+
     }
 
     &__profile {
