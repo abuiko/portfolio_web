@@ -116,6 +116,7 @@
         @include breakpoint-up(large) {
             grid-column: 3 /4;
             grid-row: 1 / 4;
+            background: #ffb68b;
         }
 
 
