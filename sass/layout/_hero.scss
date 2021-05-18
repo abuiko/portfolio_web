@@ -58,9 +58,10 @@
       }
 
       @include breakpoint-up(large) {
-        font-size: 1.65rem;
+        font-size: 2.2rem;
         width: 25rem;
         margin: 0rem 0rem 3rem;
+        color: rgb(63, 63, 63);
       }
     }
 
