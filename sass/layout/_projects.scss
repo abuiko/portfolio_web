@@ -31,7 +31,7 @@
             grid-column: 1 / 2;
             grid-row: 1 / 4;
             padding: 3rem;
-            background: #c4d4e2;
+            background: #fafbff;
         }
 
         img {
@@ -120,7 +120,7 @@
         @include breakpoint-up(large) {
             grid-column: 3 /4;
             grid-row: 1 / 4;
-            background: #c4d4e2;
+            background: #fafbff;
         }
 
 
