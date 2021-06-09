@@ -45,16 +45,24 @@ burger.addEventListener('click', () => {
 
 // OPEN CONTACT FORM
 
-const contactForm = document.querySelector(".contact__form");
-const closeContact = document.querySelector(".form-wrapper span");
-const contactBtn = document.querySelector(".contact__btn");
+// const contactForm = document.querySelector(".contact__form");
+// const closeContact = document.querySelector(".form-wrapper span");
+// const contactBtn = document.querySelector(".contact__btn");
 
-contactBtn.addEventListener("click", () => {
-  contactForm.classList.add("active");
-  body.classList.add("no-scroll");
-  closeContact.addEventListener("click", () => {
-    contactForm.classList.remove("active");
+// contactBtn.addEventListener("click", () => {
+//   contactForm.classList.add("active");
+//   body.classList.add("no-scroll");
+//   closeContact.addEventListener("click", () => {
+//     contactForm.classList.remove("active");
 
-    body.classList.remove("no-scroll");
-  });
-});
+//     body.classList.remove("no-scroll");
+//   });
+// });
+
+// footer year update
+
+const footerYear = document.getElementById("year");
+const today = new Date().getFullYear();
+console.log(footerYear);
+
+footerYear.innerHTML = today;
