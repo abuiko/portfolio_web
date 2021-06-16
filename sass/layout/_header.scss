@@ -40,7 +40,7 @@
   &__logo {
     color: $blue;
     font-size: 1.9rem;
-    font-weight: lighter;
+    font-weight: bold;
     font-family: "Montserrat", sans-serif;
 
     @include breakpoint-up(large) {

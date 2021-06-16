@@ -42,6 +42,7 @@
       @include breakpoint-up(large) {
         margin-bottom: 1.2rem;
         font-size: 3.9rem;
+        // color: #A54747;
       }
     }
 
@@ -89,6 +90,10 @@
 
     a:hover {
       transform: scale(1.1) translateY(-0.3125rem);
+
+      i {
+        color: #A54747;
+      }
     }
   }
 
