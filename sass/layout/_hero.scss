@@ -9,8 +9,8 @@
     min-height: 770px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   &__text {
@@ -35,7 +35,7 @@
 
       @include breakpoint-up(medium) {
         font-size: 2.8rem;
-        margin-top: 0;
+        margin: 0 auto 1rem;
         width: 500px;
       }
 

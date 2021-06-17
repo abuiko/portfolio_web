@@ -30,7 +30,7 @@
     color: $white;
 
     &:hover {
-        background-color: #0c3549;
+        background-color: #A54747;
     }
 }
 
@@ -39,9 +39,8 @@
     color: $blue;
 
     &:hover {
-        background: rgba(255, 255, 255, 1);
-        border: 1px solid rgb(73, 73, 73);
-        color: rgb(73, 73, 73);
+        border: 1px solid rgb(165, 71, 71);
+        color: rgb(165, 71, 71);
     }
 }
 
@@ -56,16 +55,16 @@
     display: inline-block;
     transition: all 200ms ease-in-out;
     border-radius: 10px;
-    background: #fff;
-    color: $blue;
+    // background: #fff;
+    background: transparent;
+
+    color: #fff;
     border: 1px solid #fff;
 
     &:hover {
+        background: #fff;
+        color: $blue;
 
-
-        background: transparent;
-
-        color: #fff;
     }
 }
 

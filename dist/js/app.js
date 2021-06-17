@@ -62,7 +62,15 @@ contactBtn.forEach(btn => {
   })
 
 });
+// filter for not finished projects
 
+const notFinished = document.querySelector(".gray-filter");
+
+const div = document.createElement('div');
+const fontAwesome = document.createElement('i');
+fontAwesome.classList.add("fas", "fa-lock")
+div.appendChild(fontAwesome);
+notFinished.appendChild(div);
 
 // footer year update
 
