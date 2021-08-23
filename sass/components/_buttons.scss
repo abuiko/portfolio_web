@@ -5,13 +5,13 @@
 
     border-radius: 15px;
     color: $white;
-    // color: black;
     transition: all 0.3s ease-in-out;
 
     &:hover {
 
-        background-color: transparent;
-        color: $blue;
+        // background-color: transparent;
+        border: 1px solid $red;
+        background: $red;
     }
 }
 
@@ -50,12 +50,9 @@
     text-align: center;
     padding: 0.7rem 1.7rem;
     cursor: pointer;
-
-
     display: inline-block;
     transition: all 200ms ease-in-out;
     border-radius: 10px;
-    // background: #fff;
     background: transparent;
 
     color: #fff;
