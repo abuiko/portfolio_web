@@ -124,6 +124,10 @@
     &__profile {
         h3 {
             font-size: 1.5rem;
+
+            @include breakpoint-up(large) {
+                font-size: 2rem;
+            }
         }
 
         p {
