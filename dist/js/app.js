@@ -72,10 +72,4 @@ fontAwesome.classList.add("fas", "fa-lock")
 div.appendChild(fontAwesome);
 notFinished.appendChild(div);
 
-// footer year update
 
-const footerYear = document.getElementById("year");
-const today = new Date().getFullYear();
-
-
-footerYear.innerHTML = today;
