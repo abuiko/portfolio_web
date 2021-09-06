@@ -99,7 +99,12 @@
 
     @include breakpoint-up(large) {
         width: 100%;
+        font-size: 2rem;
         margin-bottom: 1rem;
+        border: none;
+        color: white;
+        padding: 0;
+
     }
 
     &:hover {
