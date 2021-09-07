@@ -10,6 +10,12 @@
 
 
     }
+
+    &:hover {
+        @include breakpoint-up(large) {
+            background: black;
+        }
+    }
 }
 
 #resume {
