@@ -20,99 +20,65 @@
 
 #resume {
     @include breakpoint-up(large) {
-        display: flex;
-        justify-content: space-between;
+        // display: flex;
+        // justify-content: space-between;
         max-width: 1240px;
         margin: auto;
-        padding: 3rem 0.7rem;
+        padding: 1rem 0.7rem;
     }
 }
 
 .resume {
-    padding: 0.8rem 1rem 4rem;
+    // padding: 0.8rem 1rem 4rem;
+
 
     @include breakpoint-up(large) {
         width: 100%;
     }
 
-    &__title {
-        text-align: center;
-        margin-bottom: 0.5rem;
-        font-size: 2.1rem;
 
-        @include breakpoint-up(medium) {
-            font-size: 2.8rem;
-            margin-bottom: 0.3rem;
-        }
 
-        @include breakpoint-up(large) {
-            width: 20%;
-            font-size: 4rem;
-            text-align: left;
-            margin-top: 0rem;
 
-        }
+    .resume-header {
 
-    }
-
-    &__header {
-        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: $blue;
+        padding: 3rem 0rem;
 
         @include breakpoint-up(large) {
             margin-bottom: 4rem;
         }
 
-        .resume__contact {
+        .resume-title {
 
-
-            @include breakpoint-up(large) {
-                display: flex;
-                justify-content: space-between;
-            }
-        }
-
-        .job {
-            margin-bottom: 3rem;
-
-            @include breakpoint-up(large) {
-                margin-bottom: 0rem;
-                display: flex;
-                align-items: center;
-                padding-left: 2rem;
-                flex: 1;
-                margin-right: 2rem;
+            h1,
+            p {
+                color: white;
             }
 
+            h1 {
+                @include breakpoint-up(large) {
+                    font-size: 3.4rem;
+                    margin: 0rem;
+                }
+            }
 
             p {
-                font-size: 1.025rem;
-                font-weight: light;
-                color: rgb(70, 70, 70);
-
-                @include breakpoint-up(large) {
-                    font-size: 2.2rem;
-                    color: $white;
-                    width: 65%;
-                    text-align: left;
-                    line-height: 1.6;
-
-                }
-
+                margin-bottom: 0rem;
             }
 
-            @include breakpoint-up(large) {
-                background: $blue;
-            }
         }
 
+
+
         .contact-wrap {
-            @include breakpoint-up(large) {
-                flex: 1;
-            }
+
 
             i {
                 font-size: 1.4625rem;
-                color: $blue;
+                color: white;
                 margin-right: 2rem;
             }
 
@@ -121,6 +87,7 @@
             a {
                 letter-spacing: 0.03rem;
                 font-size: 0.815rem;
+                color: white;
 
                 @include breakpoint-up(large) {
                     font-size: 1rem;
@@ -129,9 +96,7 @@
 
             }
 
-            a {
-                color: black;
-            }
+
         }
 
 
