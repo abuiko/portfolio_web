@@ -86,32 +86,3 @@
     }
 
 }
-
-
-.resume__pdf {
-    padding: 0.6rem 1.5rem;
-    width: 80%;
-    border: 1px solid $blue;
-    background: transparent;
-    border-radius: 10px;
-    color: $blue;
-    cursor: pointer;
-
-    @include breakpoint-up(large) {
-        width: 100%;
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        border: none;
-        color: white;
-        padding: 0;
-
-    }
-
-    &:hover {
-        background: $blue;
-        color: #fff;
-
-
-    }
-
-}

@@ -1,30 +1,10 @@
-.resume__btns {
-    text-align: center;
-    padding: 1rem 0rem 0rem;
-
-    @include breakpoint-up(large) {
-        // order: 2;
-        // width: 10%;
-        flex: 0.2;
-        background: $blue;
-
-
-    }
-
-    &:hover {
-        @include breakpoint-up(large) {
-            background: black;
-        }
-    }
-}
-
 #resume {
     @include breakpoint-up(large) {
         // display: flex;
         // justify-content: space-between;
         max-width: 1240px;
         margin: auto;
-        padding: 1rem 0.7rem;
+        padding: 1rem 0.7rem 5rem;
     }
 }
 
@@ -32,33 +12,41 @@
     // padding: 0.8rem 1rem 4rem;
 
 
-    @include breakpoint-up(large) {
-        width: 100%;
-    }
-
-
 
 
     .resume-header {
 
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+
         background: $blue;
-        padding: 3rem 0rem;
+        padding: 4rem 0rem;
+
+
 
         @include breakpoint-up(large) {
             margin-bottom: 4rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 0.5rem;
         }
 
         .resume-title {
+            // text-align: center;
+
 
             h1,
             p {
                 color: white;
+
+                @include breakpoint-up(large) {
+                    text-align: left;
+                }
             }
 
             h1 {
+                font-size: 2.3rem;
+                margin: 0.5rem 0rem;
+
                 @include breakpoint-up(large) {
                     font-size: 3.4rem;
                     margin: 0rem;
@@ -67,13 +55,15 @@
 
             p {
                 margin-bottom: 0rem;
+                font-size: 1.3rem;
             }
 
         }
 
 
 
-        .contact-wrap {
+        .resume__contact {
+
 
 
             i {
@@ -102,52 +92,13 @@
 
     }
 
-    &__profile {
-        h3 {
-            font-size: 1.5rem;
-
-            @include breakpoint-up(large) {
-                font-size: 2rem;
-            }
-        }
-
-        p {
-            position: relative;
-            text-align: justify;
-            font-size: 0.78rem;
-
-
-            @include breakpoint-up(large) {
-                font-size: 1.1rem;
-                position: relative;
-                margin-left: 2rem;
-            }
-        }
-
-        p:before {
-            @include breakpoint-up(large) {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: -30px;
-                bottom: 0;
-                background: $blue;
-                height: 100%;
-                width: 1px;
-            }
-        }
-    }
-
-    &__content {
-
+    .resume-main {
         @include breakpoint-up(large) {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 3rem;
+            padding: 0rem 1rem 2rem;
         }
 
-        .resume__content__left {
 
+        .resume__profile {
             h3 {
                 font-size: 1.5rem;
 
@@ -156,110 +107,195 @@
                 }
             }
 
-            .degree {
-                font-size: 1.025rem;
-                font-weight: normal;
-
-                @include breakpoint-up(large) {
-                    font-size: 1.3rem;
-                }
-            }
-
-            .major,
-            .university {
-                width: 80%;
-            }
-
-            .major {
-                font-style: italic;
-            }
-
-            .university {
-                font-weight: normal;
-            }
-
-            .skills {
-                li {
-                    font-weight: lighter;
-                    letter-spacing: 0.08rem;
-                    line-height: 2;
-                    font-size: 0.9rem;
-
-                    @include breakpoint-up(large) {
-                        font-size: 1.1rem;
-                    }
-                }
-            }
-        }
-
-        .resume__content__right {
-            position: relative;
-
-            h3 {
-                font-size: 1.5rem;
-
-                @include breakpoint-up(large) {
-                    font-size: 2rem;
-                }
-            }
-
-            .experience {
+            p {
+                position: relative;
+                text-align: justify;
+                font-size: 0.78rem;
 
 
                 @include breakpoint-up(large) {
-                    max-width: 480px;
-                }
-
-                .title {
-                    font-weight: normal;
                     font-size: 1.1rem;
-                    letter-spacing: 0;
-                    line-height: 1.1;
-                    margin-bottom: 0.3rem;
+                    position: relative;
+                    margin-left: 2rem;
+                }
+            }
+
+            p:before {
+                @include breakpoint-up(large) {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -30px;
+                    bottom: 0;
+                    background: $blue;
+                    height: 100%;
+                    width: 1px;
+                }
+            }
+        }
+
+        .resume__content {
+
+            @include breakpoint-up(large) {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 3rem;
+            }
+
+            .resume__content__left {
+
+                h3 {
+                    font-size: 1.5rem;
 
                     @include breakpoint-up(large) {
-                        font-size: 1.4rem;
+                        font-size: 2rem;
                     }
                 }
 
-                .date {
-                    margin-top: 0rem;
-                    margin-bottom: 2rem;
+                .degree {
+                    font-size: 1.025rem;
+                    font-weight: normal;
+
+                    @include breakpoint-up(large) {
+                        font-size: 1.3rem;
+                    }
+                }
+
+                .major,
+                .university {
+                    width: 80%;
+                }
+
+                .major {
                     font-style: italic;
                 }
 
-                .desc {
+                .university {
+                    font-weight: normal;
+                }
+
+                .skills {
                     li {
+                        font-weight: lighter;
+                        letter-spacing: 0.08rem;
+                        line-height: 2;
                         font-size: 0.9rem;
-                        margin-bottom: 0.6rem;
-                        line-height: 1.4;
-                        letter-spacing: 0.02rem;
 
                         @include breakpoint-up(large) {
                             font-size: 1.1rem;
                         }
                     }
-
-                    margin-bottom: 2.4rem;
-                }
-
-                .place {
-                    margin-top: 0rem;
                 }
             }
 
+            .resume__content__right {
+                position: relative;
 
-        }
+                h3 {
+                    font-size: 1.5rem;
 
-        .resume__content__right:before {
-            content: "";
-            position: absolute;
-            left: -40px;
-            top: 10px;
-            bottom: 0;
-            width: 1px;
-            height: 100%;
-            background: $blue;
+                    @include breakpoint-up(large) {
+                        font-size: 2rem;
+                    }
+                }
+
+                .experience {
+
+
+                    @include breakpoint-up(large) {
+                        max-width: 530px;
+                    }
+
+                    .title {
+                        font-weight: normal;
+                        font-size: 1.1rem;
+                        letter-spacing: 0;
+                        line-height: 1.1;
+                        margin-bottom: 0.3rem;
+
+                        @include breakpoint-up(large) {
+                            font-size: 1.4rem;
+                        }
+                    }
+
+                    .date {
+                        margin-top: 0rem;
+                        margin-bottom: 2rem;
+                        font-style: italic;
+                    }
+
+                    .desc {
+                        li {
+                            font-size: 0.9rem;
+                            margin-bottom: 0.6rem;
+                            line-height: 1.4;
+                            letter-spacing: 0.02rem;
+
+                            @include breakpoint-up(large) {
+                                font-size: 1.1rem;
+                            }
+                        }
+
+                        margin-bottom: 2.4rem;
+                    }
+
+                    .place {
+                        margin-top: 0rem;
+                    }
+                }
+
+
+            }
+
+            .resume__content__right:before {
+                content: "";
+                position: absolute;
+                left: -40px;
+                top: 10px;
+                bottom: 0;
+                width: 1px;
+                height: 100%;
+                background: $blue;
+            }
         }
     }
+
+    .resume__btns {
+        text-align: center;
+        padding: 3rem 0rem 0rem;
+
+
+        .resume__pdf {
+            padding: 1rem 0rem;
+            width: 80%;
+            border: 1px solid $blue;
+            background: $blue;
+            border-radius: 10px;
+            // color: $blue;
+
+            cursor: pointer;
+
+            @include breakpoint-up(large) {
+                // width: 100%;
+                width: 30%;
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+                border: none;
+                color: white;
+                padding: 1rem 0rem;
+
+            }
+
+            &:hover {
+                background: black;
+                color: #fff;
+
+
+            }
+
+        }
+
+
+    }
+
 }
